@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  
+  <header>
+    <link rel="stylesheet" href="../CSS/design.css">
+  </header>
+  <body>
+    <h1>Introduction</h1>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="telemedicine.html">Home</a>
+        <a href="Introduction.html">Introduction</a>
+        <a href="Benefits.html">Benefits</a>
+        <a href="Challenges.html">Challenges</a>
+        <a href="Conclusion.html">Conclusion</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+      </div>
+      <p style="font-size: x-large; text-align:left;color: white;">
+        This report aims to present information on the potential benefits and challenges of 
+        telemedicine in disaster response scenarios. Telemedicine is a remote healthcare solution that allows healthcare providers 
+        to diagnose and treat patients remotely through video conferencing and other remote monitoring devices. In the event of a disaster, 
+        telemedicine can play a crucial role in providing quick and efficient medical care to people in need. 
+        This report will present the benefits and challenges of telemedicine in disaster response scenarios.</p>
+        <img src="../Images/videoconference.png" style="height: 200px; width: 300px;" alt="Video conference"> <!-- an example of an element that doesn't inherit from their ancestor -->
+        <br>
+      <a href="telemedicine.html" class="previous round">&#8249;</a>
+      <a href="Benefits.html" class="next round">&#8250;</a>
+      <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+         function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+         }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+         function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+  </body>
+</html>
